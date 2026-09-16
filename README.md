@@ -183,12 +183,17 @@ Các thành phần cốt lõi được tự triển khai 100% bằng NumPy và P
    ```bash
    python app.py
    ```
-2. Mở một Terminal khác (hoặc dùng Postman), gửi dữ liệu ngày tháng giả định vào API để lấy kết quả dự đoán:
+2. Hệ thống API sẽ khởi chạy tại `http://127.0.0.1:5000/`. Các Endpoints hỗ trợ bao gồm:
+   - **`GET /`**: Trang chủ, hiển thị thông tin chung.
+   - **`GET /health`**: Kiểm tra trạng thái hệ thống (Health Check).
+   - **`POST /predict`**: Nhận dữ liệu JSON và trả về dự đoán doanh số.
+
+3. Mở một Terminal khác (hoặc dùng Postman), gửi dữ liệu ngày tháng giả định vào API để lấy kết quả dự đoán:
    *(Ví dụ dùng PowerShell trên Windows)*
    ```powershell
    Invoke-RestMethod -Uri "http://127.0.0.1:5000/predict" -Method Post -ContentType "application/json" -Body '{"Purchase_Year": 2024, "Purchase_Month": 12, "Purchase_Day": 24, "Purchase_DayOfWeek": 1, "Purchase_IsWeekend": 0}'
    ```
-3. Hệ thống sẽ trả về số lượng đơn hàng dự báo bán được trong ngày Noel 24/12/2024.
+4. Hệ thống sẽ trả về số lượng đơn hàng dự báo bán được trong ngày Noel 24/12/2024.
 
 ---
 
