@@ -176,7 +176,7 @@ Các thành phần cốt lõi được tự triển khai 100% bằng NumPy và P
    ```
 2. Khởi chạy Jupyter Notebook hoặc mở trực tiếp trên VS Code.
 3. Chạy lần lượt các notebook từ `01` đến `05`. 
-*(Lưu ý: Mọi thuật toán tính toán bên dưới đều lấy từ thư mục `src/models/` do sinh viên tự lập trình).*
+*(Lưu ý: Mọi thuật toán tính toán bên dưới đều lấy từ thư mục `src/models/`, không phải do sinh viên tự code).*
 
 ### B. Chạy Triển khai API (Model Deployment)
 1. Tại thư mục gốc của dự án, mở Terminal và gõ:
